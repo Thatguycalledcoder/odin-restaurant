@@ -1,0 +1,20 @@
+{
+  "name": "odin-restaurant",
+  "version": "1.0.0",
+  "description": "A restaurant page with webpack and JavaScript. The DOM does not need a full refresh to switch between tabs. Content in the DOM is switched dynamically with event listeners.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
