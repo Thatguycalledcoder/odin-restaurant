@@ -164,6 +164,7 @@ main {
 #contact-content form textarea {
     margin-inline: 2rem;
     resize: vertical;
+    padding: 0.5rem;
 }
 #contact-content form button {
     height: 3rem;
