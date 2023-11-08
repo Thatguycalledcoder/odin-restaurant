@@ -17,6 +17,7 @@ const menu = Menu();
 const contact = Contact();
 
 const content = document.createElement("div");
+content.id = "content";
 console.log(links);
 content.appendChild(home);
 doc.appendChild(navbar);

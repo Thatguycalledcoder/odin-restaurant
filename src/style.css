@@ -11,6 +11,9 @@
 body {
     overflow: hidden;
 }
+#content {
+    animation: fadeIn 300ms ease-in-out;
+}
 header {
     background-color: orange;
     display: flex;
@@ -184,4 +187,9 @@ main {
 #submit-btn {
     display: flex;
     justify-content: center;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1}
 }
