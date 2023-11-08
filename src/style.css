@@ -41,6 +41,9 @@ nav > ul > li > a {
 nav > ul > li > a:hover {
     border-bottom: 2px solid red;
 }
+.active {
+    border-bottom: 2px solid red;
+}
 main {
     background-color: gold;
     display: flex;
