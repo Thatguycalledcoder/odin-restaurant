@@ -35,7 +35,7 @@ const gotoHome = function() {
     }
     content.removeChild(content.firstChild);
     content.appendChild(home);
-    doc.removeChild(doc.firstChild);
+    doc.removeChild(doc.lastChild);
     doc.appendChild(content);
 }
 
@@ -50,7 +50,7 @@ const gotoMenu = function() {
     }
     content.removeChild(content.firstChild);
     content.appendChild(menu);
-    doc.removeChild(doc.firstChild);
+    doc.removeChild(doc.lastChild);
     doc.appendChild(content);
 }
 
@@ -65,7 +65,7 @@ const gotoContact = function() {
     }
     content.removeChild(content.firstChild);
     content.appendChild(contact);
-    doc.removeChild(doc.firstChild);
+    doc.removeChild(doc.lastChild);
     doc.appendChild(content);
 }
 
@@ -73,3 +73,7 @@ const [Homepage, Menupage, Contactpage] = links;
 Homepage.addEventListener("click", gotoHome);
 Menupage.addEventListener("click", gotoMenu);
 Contactpage.addEventListener("click", gotoContact);
+
+const [Menubtn, Contactbtn] = buttons;
+Menubtn.addEventListener("click", gotoMenu);
+Contactbtn.addEventListener("click", gotoContact);
