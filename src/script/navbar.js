@@ -27,4 +27,6 @@ export default function Navbar(link = "Home") {
 
     const div = document.createElement("div");
     header.appendChild(div);
+
+    return header;
 }
