@@ -1,5 +1,6 @@
 export default function Navbar(link = "Home") {
     const header = document.createElement("header");
+    const links = [];
 
     const h1 = document.createElement("h1");
     h1.id = "logo";
@@ -11,14 +12,17 @@ export default function Navbar(link = "Home") {
 
     for (const item of ["Home", "Menu", "Contact"]) {
         const li = document.createElement("li");
-        li.id = item.toLowerCase();
-        li.textContent = item;
+        const a = document.createElement("a");
+        a.id = item.toLowerCase();
+        a.textContent = item;
         if (item == link) {
-            li.classList.add("active");
+            a.classList.add("active");
         }
         else {
-            li.classList.remove("active");
+            a.classList.remove("active");
         }
+        links.push(a);
+        li.appendChild(a);
         ul.appendChild(li);
     }
 
@@ -28,5 +32,5 @@ export default function Navbar(link = "Home") {
     const div = document.createElement("div");
     header.appendChild(div);
 
-    return header;
+    return [header, ...[links]];
 }

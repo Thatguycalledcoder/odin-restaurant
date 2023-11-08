@@ -5,44 +5,44 @@ export default function Menu() {
     const menuItems = {
         "Fried rice": {
             "name": "Fried rice",
-            "src": "./assets/img/fried-rice.jpg",
+            "src": "/src/assets/img/fried-rice.jpg",
             "caption": "Fried rice with green pepper, salad, ketchup and one choice of protein(egg, sausage, chicken).",
         }, 
         "Fried yam": {
             "name": "Fried yam",
-            "src": "./assets/img/fried-yam.jpg",
+            "src": "/src/assets/img/fried-yam.jpg",
             "caption": "Fried yam with green pepper, ketchup and one choice of protein(egg, sausage, chicken).",
         },
         "Noodles": {
             "name": "Noodles",
-            "src": "./assets/img/noodles.jpg",
+            "src": "/src/assets/img/noodles.jpg",
             "caption": "Noodles with sausages and either egg or chicken.",
         }
     }
 
-    for (const item of menuItems) {
+    for (let [key, value] of Object.entries(menuItems)) {
         const menuItem = document.createElement('div');
         menuItem.id = 'menu-item';
 
         const h2 = document.createElement('h2');
-        h2.textContent = item.name;
+        h2.textContent = value.name;
         menuItem.appendChild(h2);
 
         const figure = document.createElement('figure');
         
         const img = document.createElement('img');
-        img.src = item.src;
-        img.alt = item.name;
+        img.src = value.src;
+        img.alt = value.name;
         figure.appendChild(img);
 
         const figcaption = document.createElement('figcaption');
-        figcaption.textContent = item.caption;
+        figcaption.textContent = value.caption;
         figure.appendChild(figcaption);
         
         menuItem.appendChild(figure);
 
         const ul = document.createElement('ul');
-        for (const items of [["Normal", "$5.00"], ["Deluxe", "$10.00"] ["Assorted", "$15.00"]]){
+        for (const items of [["Normal", "$5.00"], ["Deluxe", "$10.00"], ["Assorted", "$15.00"]]){
             const li = document.createElement('li');
             for (const item of items) {
                 const p = document.createElement('p');

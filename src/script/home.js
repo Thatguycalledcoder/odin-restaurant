@@ -33,7 +33,7 @@ export default function Home() {
     landingLogo.id = 'landing-logo';
 
     const img = document.createElement('img');
-    img.src = './assets/img/landing-img.jpg';
+    img.src = "/src/assets/img/landing-img.jpg";
     img.alt = "A delicious plate of fried rice.";
 
     landingLogo.appendChild(img);

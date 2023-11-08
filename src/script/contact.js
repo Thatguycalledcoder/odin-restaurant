@@ -3,7 +3,7 @@ export default function Contact() {
     main.id = 'contact-content';
 
     const img = document.createElement('img');
-    img.src = "./assets/img/contact-img.jpg";
+    img.src = "/src/assets/img/contact-img.jpg";
     img.alt = "Food Delivery services image: A box with the words contactless delivery written on it.";
     main.appendChild(img);
 
@@ -101,4 +101,7 @@ export default function Contact() {
     submitDiv.appendChild(button);
     
     form.appendChild(submitDiv);
+    main.appendChild(form);
+
+    return main;
 }
