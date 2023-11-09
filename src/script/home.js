@@ -1,3 +1,5 @@
+import landingImg from "./../assets/img/landing-img.jpg";
+
 export default function Home() {
     const main = document.createElement('main');
     const buttons = [];
@@ -33,7 +35,7 @@ export default function Home() {
     landingLogo.id = 'landing-logo';
 
     const img = document.createElement('img');
-    img.src = "/src/assets/img/landing-img.jpg";
+    img.src = landingImg;
     img.alt = "A delicious plate of fried rice.";
 
     landingLogo.appendChild(img);

@@ -1,3 +1,7 @@
+import friedRice from "./../assets/img/fried-rice.jpg";
+import friedYam from "./../assets/img/fried-yam.jpg";
+import noodles from "./../assets/img/noodles.jpg";
+
 export default function Menu() {
     const main = document.createElement('main');
     main.id = 'menu-content';
@@ -5,17 +9,17 @@ export default function Menu() {
     const menuItems = {
         "Fried rice": {
             "name": "Fried rice",
-            "src": "/src/assets/img/fried-rice.jpg",
+            "src": friedRice,
             "caption": "Fried rice with green pepper, salad, ketchup and one choice of protein(egg, sausage, chicken).",
         }, 
         "Fried yam": {
             "name": "Fried yam",
-            "src": "/src/assets/img/fried-yam.jpg",
+            "src": friedYam,
             "caption": "Fried yam with green pepper, ketchup and one choice of protein(egg, sausage, chicken).",
         },
         "Noodles": {
             "name": "Noodles",
-            "src": "/src/assets/img/noodles.jpg",
+            "src": noodles,
             "caption": "Noodles with sausages and either egg or chicken.",
         }
     }

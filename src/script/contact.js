@@ -1,9 +1,11 @@
+import contactImg from "./../assets/img/contact-img.jpg";
+
 export default function Contact() {
     const main = document.createElement('main');
     main.id = 'contact-content';
 
     const img = document.createElement('img');
-    img.src = "/src/assets/img/contact-img.jpg";
+    img.src = contactImg;
     img.alt = "Food Delivery services image: A box with the words contactless delivery written on it.";
     main.appendChild(img);
 

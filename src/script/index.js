@@ -3,11 +3,6 @@ import Home from "./home";
 import Menu from "./menu";
 import Contact from "./contact";
 import "./../style.css";
-import "./../assets/img/contact-img.jpg";
-import "./../assets/img/fried-rice.jpg";
-import "./../assets/img/fried-yam.jpg";
-import "./../assets/img/landing-img.jpg";
-import "./../assets/img/noodles.jpg";
 
 const doc = document.querySelector("body");
 
